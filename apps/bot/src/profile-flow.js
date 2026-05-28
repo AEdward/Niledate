@@ -1,3 +1,5 @@
+import { saveProfile } from './profile-service.js';
+
 const sessions = new Map();
 const profiles = new Map();
 
