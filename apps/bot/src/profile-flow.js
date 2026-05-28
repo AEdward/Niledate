@@ -121,6 +121,9 @@ export async function handleProfilePhoto(ctx) {
   const bestPhoto = photos[photos.length - 1];
 
   session.profile.photoFileId = bestPhoto.file_id;
+  
+  await saveProfile(session.profile);
+  
   profiles.set(userId, session.profile);
   sessions.delete(userId);
 
