@@ -1,0 +1,13 @@
+{
+  "name": "niledate",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "echo Starting NileDate development environment",
+    "build": "echo Building NileDate"
+  }
+}
